@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
-  repository: mostafaahmed97/task-v4tech-crud-app
-  tag: lts
+  repository: mostafaahmed97/task-crud-app
+  tag: latest
   pullSecret: my-docker-secret
 containerPort: 80
 service:

@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
-  namespace: application-ns
+  name: crud-app
 spec:
   replicas: 1
   selector:
@@ -15,9 +14,9 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: mostafaahmed97/task-v4tech-crud-app:lts
+          image: mostafaahmed97/task-crud-app:latest
           ports:
             - name: app-port
               containerPort: 80
       imagePullSecrets:
-      - name: secret/my-docker-secret
+      - name: secret/registry-sec
